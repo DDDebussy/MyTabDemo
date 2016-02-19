@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void selectTab(int position) {
         if (mvp!=null) {
-            mvp.setCurrentItem(position,false);
+            mvp.setCurrentItem(position,false);//false:关闭动画效果，不加这个参数的话是带viewpager的转换效果
         }
     }
 
